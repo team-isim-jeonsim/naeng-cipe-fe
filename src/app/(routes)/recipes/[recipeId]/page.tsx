@@ -1,16 +1,10 @@
 import RecipeDetail from '@/components/domain/recipe/RecipeDetail';
-import { getRecipeDetail } from '@/service/recipeService';
-import { cache } from 'react';
 
-export interface Params {
+interface Params {
   params: {
     recipeId: string;
   };
 }
-
-export const getCacheRecipe = cache(
-  async (recipeId: string) => await getRecipeDetail(recipeId)
-);
 
 export default async function RecipeDetailPage({
   params: { recipeId },

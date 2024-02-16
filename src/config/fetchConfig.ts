@@ -1,4 +1,4 @@
-export const CLIENT_BASE_URL = process.env.NEXT_PUBLIC_LOCAL_CLIENT_URL;
+export const CLIENT_BASE_URL = process.env.NEXT_PUBLIC_CLIENT_URL;
 export const API_BASE_URL = process.env.API_URL;
 export const TYPE_JSON = 'json';
 export const TYPE_FORM = 'form';

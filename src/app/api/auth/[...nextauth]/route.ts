@@ -36,14 +36,6 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
   callbacks: {
-    async signIn({ user }) {
-      console.log('sign in!!!!!!!!!!!!!!!');
-      console.log(user);
-
-      if (user?.status >= 400) return false;
-
-      return true;
-    },
     async jwt({ token, user }) {
       console.log('jwt');
       console.log(user);

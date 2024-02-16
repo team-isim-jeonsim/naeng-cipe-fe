@@ -1,5 +1,5 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 import MyInfo from '@/components/domain/member/MyInfo';
+import { authOptions } from '@/util/authOptions';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
 

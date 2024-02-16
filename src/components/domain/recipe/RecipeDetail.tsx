@@ -68,7 +68,7 @@ export default function RecipeDetail({ recipeId }: RecipeDetailProps) {
       </div>
       <div className='min-h-[400px] p-5 flex flex-col gap-5'>
         <ul className='flex justify-center items-center'>
-          {recipe?.ingredients.map((ingredient) => (
+          {recipe?.ingredients.map((ingredient: IngredientResponse) => (
             <li
               key={ingredient.id}
               className={`mr-2 py-1 px-3 rounded-2xl text-sm ${getBackgroundColor()}`}
